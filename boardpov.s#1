@@ -78,10 +78,7 @@
 <layer number="111" name="LPC17xx" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="112" name="tSilk" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="113" name="LOGO" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="114" name="Badge_Outline" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="115" name="ReferenceISLANDS" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="116" name="Patch_BOT" color="9" fill="4" visible="yes" active="yes"/>
-<layer number="118" name="Rect_Pads" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="121" name="_tsilk" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="122" name="_bsilk" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="123" name="tTestmark" color="7" fill="1" visible="yes" active="yes"/>
@@ -126,21 +123,11 @@
 <layer number="222" name="222bmp" color="23" fill="1" visible="no" active="no"/>
 <layer number="223" name="223bmp" color="24" fill="1" visible="no" active="no"/>
 <layer number="224" name="224bmp" color="25" fill="1" visible="no" active="no"/>
-<layer number="225" name="225bmp" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="226" name="226bmp" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="227" name="227bmp" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="228" name="228bmp" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="229" name="229bmp" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="230" name="230bmp" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="231" name="231bmp" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="232" name="Eagle3D_PG2" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="233" name="Eagle3D_PG3" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="248" name="Housing" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="249" name="Edge" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="250" name="Descript" color="7" fill="1" visible="no" active="no"/>
 <layer number="251" name="SMDround" color="7" fill="1" visible="no" active="no"/>
 <layer number="254" name="cooling" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="255" name="routoute" color="7" fill="1" visible="yes" active="yes"/>
 </layers>
 <schematic xreflabel="%F%N/%S.%C%R" xrefpart="/%S.%C%R">
 <libraries>
@@ -531,14 +518,14 @@ RECOMMENDED ON ALL LAYERS</text>
 <library name="POVPARTS">
 <packages>
 <package name="APA102-2020">
-<smd name="CKL" x="0.4" y="1.27" dx="0.3" dy="0.8" layer="16" rot="R270"/>
-<smd name="VDD+" x="1.27" y="2.14" dx="0.5" dy="1" layer="1"/>
-<smd name="GND-" x="1.27" y="0.7" dx="0.5" dy="1.48" layer="1"/>
-<smd name="SD0" x="2.14" y="0.4" dx="0.5" dy="0.8" layer="16" rot="R90"/>
-<smd name="SD1" x="0.4" y="0.4" dx="0.5" dy="0.8" layer="16" rot="R90"/>
-<smd name="VDD" x="2.14" y="2.14" dx="0.5" dy="0.8" layer="16" rot="R90"/>
-<smd name="GND" x="0.4" y="2.14" dx="0.5" dy="0.8" layer="16" rot="R90"/>
-<smd name="CK0" x="2.14" y="1.27" dx="0.3" dy="0.8" layer="16" rot="R270"/>
+<smd name="5" x="0.4" y="1.27" dx="0.3" dy="0.8" layer="16" rot="R270"/>
+<smd name="VDD" x="1.27" y="2.14" dx="0.5" dy="1" layer="1"/>
+<smd name="GND" x="1.27" y="0.7" dx="0.5" dy="1.48" layer="1"/>
+<smd name="3" x="2.14" y="0.4" dx="0.5" dy="0.8" layer="16" rot="R90"/>
+<smd name="4" x="0.4" y="0.4" dx="0.5" dy="0.8" layer="16" rot="R90"/>
+<smd name="1" x="2.14" y="2.14" dx="0.5" dy="0.8" layer="16" rot="R90"/>
+<smd name="6" x="0.4" y="2.14" dx="0.5" dy="0.8" layer="16" rot="R90"/>
+<smd name="2" x="2.14" y="1.27" dx="0.3" dy="0.8" layer="16" rot="R270"/>
 <wire x1="0.29" y1="2.17" x2="0.99" y2="2.17" width="0.127" layer="51"/>
 <wire x1="0.99" y1="2.17" x2="1.49" y2="2.17" width="0.127" layer="51"/>
 <wire x1="1.49" y1="2.17" x2="2.29" y2="2.17" width="0.127" layer="51"/>
@@ -595,209 +582,17 @@ RECOMMENDED ON ALL LAYERS</text>
 <devices>
 <device name="20-20" package="APA102-2020">
 <connects>
-<connect gate="G$1" pin="CK0" pad="CK0"/>
-<connect gate="G$1" pin="CKL" pad="CKL"/>
-<connect gate="G$1" pin="GND" pad="GND"/>
-<connect gate="G$1" pin="GND-" pad="GND-"/>
-<connect gate="G$1" pin="SD0" pad="SD0"/>
-<connect gate="G$1" pin="SD1" pad="SD1"/>
-<connect gate="G$1" pin="VDD" pad="VDD"/>
-<connect gate="G$1" pin="VDD+" pad="VDD+"/>
+<connect gate="G$1" pin="CK0" pad="2"/>
+<connect gate="G$1" pin="CKL" pad="5"/>
+<connect gate="G$1" pin="GND" pad="6"/>
+<connect gate="G$1" pin="GND-" pad="GND"/>
+<connect gate="G$1" pin="SD0" pad="3"/>
+<connect gate="G$1" pin="SD1" pad="4"/>
+<connect gate="G$1" pin="VDD" pad="1"/>
+<connect gate="G$1" pin="VDD+" pad="VDD"/>
 </connects>
 <technologies>
 <technology name=""/>
-</technologies>
-</device>
-</devices>
-</deviceset>
-</devicesets>
-</library>
-<library name="SparkFun-Sensors" urn="urn:adsk.eagle:library:534">
-<description>&lt;h3&gt;SparkFun Sensors&lt;/h3&gt;
-This library contains sensors- accelerometers, gyros, compasses, magnetometers, light sensors, imagers, temp sensors, etc.
-&lt;br&gt;
-&lt;br&gt;
-We've spent an enormous amount of time creating and checking these footprints and parts, but it is &lt;b&gt; the end user's responsibility&lt;/b&gt; to ensure correctness and suitablity for a given componet or application. 
-&lt;br&gt;
-&lt;br&gt;If you enjoy using this library, please buy one of our products at &lt;a href=" www.sparkfun.com"&gt;SparkFun.com&lt;/a&gt;.
-&lt;br&gt;
-&lt;br&gt;
-&lt;b&gt;Licensing:&lt;/b&gt; Creative Commons ShareAlike 4.0 International - https://creativecommons.org/licenses/by-sa/4.0/ 
-&lt;br&gt;
-&lt;br&gt;
-You are welcome to use this library for commercial purposes. For attribution, we ask that when you begin to sell your device using our footprint, you email us with a link to the product being sold. We want bragging rights that we helped (in a very small part) to create your 8th world wonder. We would like the opportunity to feature your device on our homepage.</description>
-<packages>
-<package name="BRM-2508" urn="urn:adsk.eagle:footprint:39863/1" library_version="1">
-<description>&lt;h3&gt;BRM-2A18 Infrared Receiver - Horizontal Facing&lt;/h3&gt;
-&lt;p&gt;&lt;a href="http://www.sinoskysun.com/upload/20110512/201105120447164615.PDF"&gt;Datasheet&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;Specifications:
-&lt;ul&gt;
-&lt;li&gt;Pin Count: 3&lt;/li&gt;
-&lt;li&gt;Area: 6.0 x 5.6 mm&lt;/li&gt;
-&lt;li&gt;Pitch: 2.54 m,&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;Devices Using:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;BRM-2A18&lt;/li&gt;
-&lt;li&gt;BRM-2508&lt;/li&gt;
-&lt;/ul&gt;</description>
-<pad name="1" x="-2.54" y="0" drill="1.016" diameter="1.8796" rot="R90"/>
-<pad name="2" x="0" y="0" drill="1.016" diameter="1.8796" rot="R90"/>
-<pad name="3" x="2.54" y="0" drill="1.016" diameter="1.8796" rot="R90"/>
-<rectangle x1="2.286" y1="-0.254" x2="2.794" y2="0.254" layer="51"/>
-<rectangle x1="-0.254" y1="-0.254" x2="0.254" y2="0.254" layer="51"/>
-<rectangle x1="-2.794" y1="-0.254" x2="-2.286" y2="0.254" layer="51"/>
-<wire x1="-3" y1="-2.4" x2="-2.2" y2="-2.4" width="0.127" layer="51"/>
-<wire x1="-2.2" y1="-2.4" x2="2.2" y2="-2.4" width="0.127" layer="51"/>
-<wire x1="2.2" y1="-2.4" x2="3" y2="-2.4" width="0.127" layer="51"/>
-<wire x1="-3" y1="1.5" x2="3" y2="1.5" width="0.127" layer="51"/>
-<wire x1="-3" y1="1.5" x2="-3" y2="-2.4" width="0.127" layer="51"/>
-<wire x1="3" y1="1.5" x2="3" y2="-2.4" width="0.127" layer="51"/>
-<wire x1="2.2" y1="-2.4" x2="-2.2" y2="-2.4" width="0.127" layer="51" curve="-151.38954"/>
-<wire x1="-3" y1="1.627" x2="3" y2="1.627" width="0.2032" layer="21"/>
-<wire x1="3" y1="1.627" x2="3" y2="1.1" width="0.2032" layer="21"/>
-<wire x1="-1.39" y1="-1.1" x2="-3.69" y2="-1.1" width="0.2032" layer="21"/>
-<wire x1="-1.39" y1="1.1" x2="-3.69" y2="1.1" width="0.2032" layer="21"/>
-<wire x1="-3.69" y1="1.1" x2="-3.69" y2="-1.1" width="0.2032" layer="21"/>
-<wire x1="-1.39" y1="1.1" x2="-1.39" y2="-1.1" width="0.2032" layer="21"/>
-<circle x="-2.5" y="-1.7" radius="0.2236" width="0.127" layer="51"/>
-<text x="0" y="1.778" size="0.6096" layer="25" font="vector" ratio="20" align="bottom-center">&gt;NAME</text>
-<text x="0" y="-2.54" size="0.6096" layer="27" font="vector" ratio="20" align="top-center">&gt;VALUE</text>
-</package>
-<package name="BRM-2508_VERT" urn="urn:adsk.eagle:footprint:39864/1" library_version="1">
-<description>&lt;h3&gt;BRM-2A18 Infrared Receive - Vertical Facingr&lt;/h3&gt;
-&lt;p&gt;&lt;a href="http://www.sinoskysun.com/upload/20110512/201105120447164615.PDF"&gt;Datasheet&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;Specifications:
-&lt;ul&gt;
-&lt;li&gt;Pin Count: 3&lt;/li&gt;
-&lt;li&gt;Area: 6.0 x 5.6 mm&lt;/li&gt;
-&lt;li&gt;Pitch: 2.54 m,&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;Devices Using:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;BRM-2A18&lt;/li&gt;
-&lt;li&gt;BRM-2508&lt;/li&gt;
-&lt;/ul&gt;</description>
-<pad name="1" x="-2.54" y="0" drill="1.016" diameter="1.8796" rot="R90"/>
-<pad name="2" x="0" y="0" drill="1.016" diameter="1.8796" rot="R90"/>
-<pad name="3" x="2.54" y="0" drill="1.016" diameter="1.8796" rot="R90"/>
-<rectangle x1="2.286" y1="-0.254" x2="2.794" y2="0.254" layer="51"/>
-<rectangle x1="-0.254" y1="-0.254" x2="0.254" y2="0.254" layer="51"/>
-<rectangle x1="-2.794" y1="-0.254" x2="-2.286" y2="0.254" layer="51"/>
-<wire x1="-3" y1="8.18" x2="3" y2="8.18" width="0.127" layer="51"/>
-<wire x1="-3" y1="1.23" x2="3" y2="1.23" width="0.127" layer="51"/>
-<wire x1="-3" y1="8.2" x2="3" y2="8.2" width="0.2032" layer="21"/>
-<wire x1="-1.39" y1="-1.1" x2="-3.69" y2="-1.1" width="0.2032" layer="21"/>
-<wire x1="-1.39" y1="1.1" x2="-3.69" y2="1.1" width="0.2032" layer="21"/>
-<wire x1="-3.69" y1="1.1" x2="-3.69" y2="-1.1" width="0.2032" layer="21"/>
-<wire x1="-1.39" y1="1.1" x2="-1.39" y2="-1.1" width="0.2032" layer="21"/>
-<wire x1="-3" y1="8.18" x2="-3" y2="1.23" width="0.127" layer="51"/>
-<wire x1="3" y1="8.18" x2="3" y2="1.23" width="0.127" layer="51"/>
-<wire x1="0" y1="1.2" x2="0" y2="0" width="0.127" layer="51"/>
-<wire x1="-2.5" y1="0" x2="-2" y2="0" width="0.127" layer="51"/>
-<wire x1="-2" y1="0" x2="-2" y2="1.2" width="0.127" layer="51"/>
-<wire x1="2.5" y1="0" x2="2" y2="0" width="0.127" layer="51"/>
-<wire x1="2" y1="0" x2="2" y2="1.2" width="0.127" layer="51"/>
-<wire x1="-3" y1="1.2" x2="3" y2="1.2" width="0.2032" layer="21"/>
-<wire x1="-3" y1="8.18" x2="-3" y2="1.23" width="0.2032" layer="21"/>
-<wire x1="3" y1="8.18" x2="3" y2="1.23" width="0.2032" layer="21"/>
-<wire x1="2.34923125" y1="4.62495" x2="2.34923125" y2="6.33505" width="0.2032" layer="21" curve="39.999989"/>
-<wire x1="0.85505" y1="7.82923125" x2="-0.85505" y2="7.82923125" width="0.2032" layer="21" curve="39.999989"/>
-<wire x1="-2.34923125" y1="6.33505" x2="-2.34923125" y2="4.62495" width="0.2032" layer="21" curve="39.999989"/>
-<wire x1="-0.85505" y1="3.13076875" x2="0.85505" y2="3.13076875" width="0.2032" layer="21" curve="39.999989"/>
-<circle x="-2.54" y="0.7" radius="0.2236" width="0.127" layer="51"/>
-<circle x="0" y="5.48" radius="2.5" width="0.127" layer="51"/>
-<text x="0" y="8.382" size="0.6096" layer="25" font="vector" ratio="20" align="bottom-center">&gt;NAME</text>
-<text x="0" y="-1.27" size="0.6096" layer="27" font="vector" ratio="20" align="top-center">&gt;VALUE</text>
-</package>
-</packages>
-<packages3d>
-<package3d name="BRM-2508" urn="urn:adsk.eagle:package:39962/1" type="box" library_version="1">
-<description>BRM-2A18 Infrared Receiver - Horizontal Facing
-Datasheet
-Specifications:
-
-Pin Count: 3
-Area: 6.0 x 5.6 mm
-Pitch: 2.54 m,
-
-Devices Using:
-
-BRM-2A18
-BRM-2508
-</description>
-</package3d>
-<package3d name="BRM-2508_VERT" urn="urn:adsk.eagle:package:39963/1" type="box" library_version="1">
-<description>BRM-2A18 Infrared Receive - Vertical Facingr
-Datasheet
-Specifications:
-
-Pin Count: 3
-Area: 6.0 x 5.6 mm
-Pitch: 2.54 m,
-
-Devices Using:
-
-BRM-2A18
-BRM-2508
-</description>
-</package3d>
-</packages3d>
-<symbols>
-<symbol name="BRM-2A18" urn="urn:adsk.eagle:symbol:39869/1" library_version="1">
-<description>&lt;h3&gt;BRM-2A18 IR Receiver&lt;/h3&gt;
-&lt;p&gt;The BRM-2A18 is miniaturized infrared receiver for remote control and other applications requiring improved ambient light rejection. &lt;/p&gt;</description>
-<wire x1="5.08" y1="5.08" x2="-5.08" y2="5.08" width="0.254" layer="94"/>
-<wire x1="-5.08" y1="5.08" x2="-5.08" y2="-5.08" width="0.254" layer="94"/>
-<wire x1="-5.08" y1="-5.08" x2="5.08" y2="-5.08" width="0.254" layer="94"/>
-<wire x1="5.08" y1="-5.08" x2="5.08" y2="5.08" width="0.254" layer="94"/>
-<pin name="VCC" x="7.62" y="-2.54" length="short" rot="R180"/>
-<pin name="GND" x="7.62" y="0" length="short" rot="R180"/>
-<pin name="OUT" x="7.62" y="2.54" length="short" rot="R180"/>
-<text x="-5.08" y="5.334" size="1.778" layer="95" font="vector">&gt;Name</text>
-<text x="-5.08" y="-5.334" size="1.778" layer="96" font="vector" align="top-left">&gt;Value</text>
-</symbol>
-</symbols>
-<devicesets>
-<deviceset name="BRM-2A18" urn="urn:adsk.eagle:component:40042/1" prefix="D" library_version="1">
-<description>&lt;h3&gt;BRM-2A18 IR Receiver&lt;/h3&gt;
-&lt;p&gt;The BRM-2A18 is miniaturized infrared receiver for remote control and other applications requiring improved ambient light rejection. &lt;/p&gt;
-&lt;p&gt;Vertical package is a primary component on the ZX Distance and Gesture Sensor. RA package is not currently in-use.&lt;/p&gt;
-&lt;p&gt;&lt;a href="http://www.sinoskysun.com/upload/20110512/201105120447164615.PDF"&gt;Example Datasheet&lt;/a&gt;&lt;/p&gt;
-&lt;h4&gt;SparkFun Products&lt;/h4&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href="https://www.sparkfun.com/products/12780"&gt;ZX Distance and Gesture Sensor&lt;/a&gt; (COM-12780)&lt;/li&gt;
-&lt;/ul&gt;</description>
-<gates>
-<gate name="G$1" symbol="BRM-2A18" x="0" y="0"/>
-</gates>
-<devices>
-<device name="RA" package="BRM-2508">
-<connects>
-<connect gate="G$1" pin="GND" pad="2"/>
-<connect gate="G$1" pin="OUT" pad="1"/>
-<connect gate="G$1" pin="VCC" pad="3"/>
-</connects>
-<package3dinstances>
-<package3dinstance package3d_urn="urn:adsk.eagle:package:39962/1"/>
-</package3dinstances>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-<device name="VERT" package="BRM-2508_VERT">
-<connects>
-<connect gate="G$1" pin="GND" pad="2"/>
-<connect gate="G$1" pin="OUT" pad="1"/>
-<connect gate="G$1" pin="VCC" pad="3"/>
-</connects>
-<package3dinstances>
-<package3dinstance package3d_urn="urn:adsk.eagle:package:39963/1"/>
-</package3dinstances>
-<technologies>
-<technology name="">
-<attribute name="PROD_ID" value="COMP-12505"/>
-</technology>
 </technologies>
 </device>
 </devices>
@@ -854,7 +649,6 @@ BRM-2508
 <part name="U$47" library="POVPARTS" deviceset="APA102-2020" device="20-20"/>
 <part name="U$48" library="POVPARTS" deviceset="APA102-2020" device="20-20"/>
 <part name="U$49" library="POVPARTS" deviceset="APA102-2020" device="20-20"/>
-<part name="D1" library="SparkFun-Sensors" library_urn="urn:adsk.eagle:library:534" deviceset="BRM-2A18" device="RA" package3d_urn="urn:adsk.eagle:package:39962/1"/>
 </parts>
 <sheets>
 <sheet>
@@ -901,7 +695,6 @@ BRM-2508
 <instance part="U$47" gate="G$1" x="226.06" y="71.12"/>
 <instance part="U$48" gate="G$1" x="185.42" y="71.12"/>
 <instance part="U$49" gate="G$1" x="149.86" y="71.12"/>
-<instance part="D1" gate="G$1" x="38.1" y="-38.1"/>
 </instances>
 <busses>
 </busses>
@@ -915,21 +708,6 @@ BRM-2508
 <note version="6.3" minversion="6.2.2" severity="warning">
 Since Version 6.2.2 text objects can contain more than one line,
 which will not be processed correctly with this version.
-</note>
-<note version="8.2" severity="warning">
-Since Version 8.2, EAGLE supports online libraries. The ids
-of those online libraries will not be understood (or retained)
-with this version.
-</note>
-<note version="8.3" severity="warning">
-Since Version 8.3, EAGLE supports URNs for individual library
-assets (packages, symbols, and devices). The URNs of those assets
-will not be understood (or retained) with this version.
-</note>
-<note version="8.3" severity="warning">
-Since Version 8.3, EAGLE supports the association of 3D packages
-with devices in libraries, schematics, and board files. Those 3D
-packages will not be understood (or retained) with this version.
 </note>
 </compatibility>
 </eagle>
