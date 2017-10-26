@@ -50,7 +50,7 @@
 <layer number="90" name="Modules" color="5" fill="1" visible="yes" active="yes"/>
 <layer number="91" name="Nets" color="2" fill="1" visible="yes" active="yes"/>
 <layer number="92" name="Busses" color="1" fill="1" visible="yes" active="yes"/>
-<layer number="93" name="Pins" color="2" fill="1" visible="yes" active="yes"/>
+<layer number="93" name="Pins" color="2" fill="1" visible="no" active="yes"/>
 <layer number="94" name="Symbols" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="95" name="Names" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="96" name="Values" color="7" fill="1" visible="yes" active="yes"/>
@@ -62,20 +62,6 @@
 </packages>
 <symbols>
 <symbol name="APA102-2020">
-<wire x1="-10.16" y1="10.16" x2="-10.16" y2="-10.16" width="0.254" layer="94"/>
-<wire x1="-10.16" y1="-10.16" x2="10.16" y2="-10.16" width="0.254" layer="94"/>
-<wire x1="10.16" y1="-10.16" x2="10.16" y2="10.16" width="0.254" layer="94"/>
-<wire x1="10.16" y1="10.16" x2="-10.16" y2="10.16" width="0.254" layer="94"/>
-<pin name="GND" x="-15.24" y="7.62" length="middle"/>
-<pin name="CKL" x="-15.24" y="0" length="middle"/>
-<pin name="SD1" x="-15.24" y="-7.62" length="middle"/>
-<pin name="SD0" x="15.24" y="-7.62" length="middle" rot="R180"/>
-<pin name="CK0" x="15.24" y="0" length="middle" rot="R180"/>
-<pin name="VDD" x="15.24" y="7.62" length="middle" rot="R180"/>
-<pin name="VDD+" x="0" y="5.08" length="middle" rot="R90"/>
-<pin name="GND-" x="0" y="-5.08" length="middle" rot="R270"/>
-<text x="-10.16" y="10.16" size="1.778" layer="95">&gt;NAME</text>
-<text x="0" y="-12.7" size="1.778" layer="96">&gt;VALUE</text>
 </symbol>
 </symbols>
 <devicesets>
