@@ -148,8 +148,8 @@
 <wire x1="110.363" y1="0" x2="110.363" y2="30.734" width="0" layer="20"/>
 <wire x1="110.363" y1="30.734" x2="0" y2="30.734" width="0" layer="20"/>
 <wire x1="0" y1="30.734" x2="0" y2="0" width="0" layer="20"/>
-<hole x="3.81" y="27.94" drill="3.048"/>
-<hole x="3.81" y="2.54" drill="3.048"/>
+<hole x="3.81" y="27.94" drill="3.302"/>
+<hole x="3.81" y="2.54" drill="3.302"/>
 </plain>
 <libraries>
 <library name="SparkFun-Connectors" urn="urn:adsk.eagle:library:513">

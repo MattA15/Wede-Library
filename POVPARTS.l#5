@@ -60,42 +60,64 @@
 <library>
 <packages>
 <package name="APA102-2020">
-<smd name="5" x="-21.19" y="0" dx="0.3" dy="0.8" layer="16" rot="R270"/>
-<smd name="VDD" x="-20.32" y="0.87" dx="0.5" dy="1" layer="1"/>
-<smd name="GND" x="-20.32" y="-0.57" dx="0.5" dy="1.48" layer="1"/>
-<smd name="3" x="-19.45" y="-0.87" dx="0.5" dy="0.8" layer="16" rot="R90"/>
-<smd name="4" x="-21.19" y="-0.87" dx="0.5" dy="0.8" layer="16" rot="R90"/>
-<smd name="1" x="-19.45" y="0.87" dx="0.5" dy="0.8" layer="16" rot="R90"/>
-<smd name="6" x="-21.19" y="0.87" dx="0.5" dy="0.8" layer="16" rot="R90"/>
-<smd name="2" x="-19.45" y="0" dx="0.3" dy="0.8" layer="16" rot="R270"/>
-<wire x1="-21.3" y1="0.9" x2="-20.6" y2="0.9" width="0.127" layer="51"/>
-<wire x1="-20.6" y1="0.9" x2="-20.1" y2="0.9" width="0.127" layer="51"/>
-<wire x1="-20.1" y1="0.9" x2="-19.3" y2="0.9" width="0.127" layer="51"/>
-<wire x1="-19.3" y1="0.9" x2="-19.3" y2="0.2" width="0.127" layer="51"/>
-<wire x1="-19.3" y1="0.2" x2="-19.3" y2="-0.2" width="0.127" layer="51"/>
-<wire x1="-19.3" y1="-0.2" x2="-19.3" y2="-0.9" width="0.127" layer="51"/>
-<wire x1="-19.3" y1="-0.9" x2="-20" y2="-0.9" width="0.127" layer="51"/>
-<wire x1="-20" y1="-0.9" x2="-20.6" y2="-0.9" width="0.127" layer="51"/>
-<wire x1="-20.6" y1="-0.9" x2="-21.3" y2="-0.9" width="0.127" layer="51"/>
-<wire x1="-21.3" y1="-0.9" x2="-21.3" y2="-0.2" width="0.127" layer="51"/>
-<wire x1="-21.3" y1="-0.2" x2="-21.3" y2="0.2" width="0.127" layer="51"/>
-<wire x1="-21.3" y1="0.2" x2="-21.3" y2="0.9" width="0.127" layer="51"/>
-<wire x1="-21.3" y1="0.2" x2="-20.7" y2="0.2" width="0.127" layer="51"/>
-<wire x1="-20.7" y1="0.2" x2="-20.7" y2="-0.2" width="0.127" layer="51"/>
-<wire x1="-20.7" y1="-0.2" x2="-21.3" y2="-0.2" width="0.127" layer="51"/>
-<wire x1="-19.3" y1="0.2" x2="-19.9" y2="0.2" width="0.127" layer="51"/>
-<wire x1="-19.9" y1="0.2" x2="-19.9" y2="-0.2" width="0.127" layer="51"/>
-<wire x1="-19.9" y1="-0.2" x2="-19.3" y2="-0.2" width="0.127" layer="51"/>
-<wire x1="-20.6" y1="-0.9" x2="-20.6" y2="0.1" width="0.127" layer="51"/>
-<wire x1="-20.6" y1="0.1" x2="-20" y2="0.1" width="0.127" layer="51"/>
-<wire x1="-20" y1="0.1" x2="-20" y2="-0.9" width="0.127" layer="51"/>
-<wire x1="-20.6" y1="0.9" x2="-20.6" y2="0.5" width="0.127" layer="51"/>
-<wire x1="-20.6" y1="0.5" x2="-20.1" y2="0.5" width="0.127" layer="51"/>
-<wire x1="-20.1" y1="0.5" x2="-20.1" y2="0.9" width="0.127" layer="51"/>
-<wire x1="-21.8" y1="1.5" x2="-18.8" y2="1.5" width="0.127" layer="52"/>
-<wire x1="-18.8" y1="1.5" x2="-18.8" y2="-1.5" width="0.127" layer="52"/>
-<wire x1="-18.8" y1="-1.5" x2="-21.8" y2="-1.5" width="0.127" layer="52"/>
-<wire x1="-21.8" y1="-1.5" x2="-21.8" y2="1.5" width="0.127" layer="52"/>
+<smd name="CKL" x="0.4" y="1.27" dx="0.3" dy="0.8" layer="16" rot="R270"/>
+<smd name="VDD+" x="1.27" y="2.14" dx="0.5" dy="1" layer="1"/>
+<smd name="GND-" x="1.27" y="0.7" dx="0.5" dy="1.48" layer="1"/>
+<smd name="SD0" x="2.14" y="0.4" dx="0.5" dy="0.8" layer="16" rot="R90"/>
+<smd name="SD1" x="0.4" y="0.4" dx="0.5" dy="0.8" layer="16" rot="R90"/>
+<smd name="VDD" x="2.14" y="2.14" dx="0.5" dy="0.8" layer="16" rot="R90"/>
+<smd name="GND" x="0.4" y="2.14" dx="0.5" dy="0.8" layer="16" rot="R90"/>
+<smd name="CK0" x="2.14" y="1.27" dx="0.3" dy="0.8" layer="16" rot="R270"/>
+<wire x1="0.29" y1="2.17" x2="0.99" y2="2.17" width="0.127" layer="51"/>
+<wire x1="0.99" y1="2.17" x2="1.49" y2="2.17" width="0.127" layer="51"/>
+<wire x1="1.49" y1="2.17" x2="2.29" y2="2.17" width="0.127" layer="51"/>
+<wire x1="2.29" y1="2.17" x2="2.29" y2="1.47" width="0.127" layer="51"/>
+<wire x1="2.29" y1="1.47" x2="2.29" y2="1.07" width="0.127" layer="51"/>
+<wire x1="2.29" y1="1.07" x2="2.29" y2="0.37" width="0.127" layer="51"/>
+<wire x1="2.29" y1="0.37" x2="1.59" y2="0.37" width="0.127" layer="51"/>
+<wire x1="1.59" y1="0.37" x2="0.99" y2="0.37" width="0.127" layer="51"/>
+<wire x1="0.99" y1="0.37" x2="0.29" y2="0.37" width="0.127" layer="51"/>
+<wire x1="0.29" y1="0.37" x2="0.29" y2="1.07" width="0.127" layer="51"/>
+<wire x1="0.29" y1="1.07" x2="0.29" y2="1.47" width="0.127" layer="51"/>
+<wire x1="0.29" y1="1.47" x2="0.29" y2="2.17" width="0.127" layer="51"/>
+<wire x1="0.29" y1="1.47" x2="0.89" y2="1.47" width="0.127" layer="51"/>
+<wire x1="0.89" y1="1.47" x2="0.89" y2="1.07" width="0.127" layer="51"/>
+<wire x1="0.89" y1="1.07" x2="0.29" y2="1.07" width="0.127" layer="51"/>
+<wire x1="2.29" y1="1.47" x2="1.69" y2="1.47" width="0.127" layer="51"/>
+<wire x1="1.69" y1="1.47" x2="1.69" y2="1.07" width="0.127" layer="51"/>
+<wire x1="1.69" y1="1.07" x2="2.29" y2="1.07" width="0.127" layer="51"/>
+<wire x1="0.99" y1="0.37" x2="0.99" y2="1.37" width="0.127" layer="51"/>
+<wire x1="0.99" y1="1.37" x2="1.59" y2="1.37" width="0.127" layer="51"/>
+<wire x1="1.59" y1="1.37" x2="1.59" y2="0.37" width="0.127" layer="51"/>
+<wire x1="0.99" y1="2.17" x2="0.99" y2="1.77" width="0.127" layer="51"/>
+<wire x1="0.99" y1="1.77" x2="1.49" y2="1.77" width="0.127" layer="51"/>
+<wire x1="1.49" y1="1.77" x2="1.49" y2="2.17" width="0.127" layer="51"/>
+<wire x1="-0.21" y1="2.77" x2="2.79" y2="2.77" width="0.127" layer="52"/>
+<wire x1="2.79" y1="2.77" x2="2.79" y2="-0.23" width="0.127" layer="52"/>
+<wire x1="2.79" y1="-0.23" x2="-0.21" y2="-0.23" width="0.127" layer="52"/>
+<wire x1="-0.21" y1="-0.23" x2="-0.21" y2="2.77" width="0.127" layer="52"/>
+</package>
+<package name="LEVENSHIFTER">
+<wire x1="0" y1="15.795821875" x2="0" y2="4.33604375" width="0.127" layer="21"/>
+<wire x1="0" y1="4.33604375" x2="4.33604375" y2="0" width="0.127" layer="21" curve="90"/>
+<wire x1="4.33604375" y1="0" x2="11.00584375" y2="0" width="0.127" layer="21"/>
+<wire x1="11.00584375" y1="0" x2="15.1" y2="4.09415625" width="0.127" layer="21" curve="90"/>
+<wire x1="15.1" y1="4.09415625" x2="15.1" y2="16.048375" width="0.127" layer="21"/>
+<wire x1="15.1" y1="16.048375" x2="10.548375" y2="20.6" width="0.127" layer="21" curve="90"/>
+<wire x1="10.548375" y1="20.6" x2="4.804178125" y2="20.6" width="0.127" layer="21"/>
+<wire x1="4.804178125" y1="20.6" x2="0" y2="15.795821875" width="0.127" layer="21" curve="90"/>
+<pad name="GND2" x="2.54" y="3.81" drill="0.6" diameter="1.9304"/>
+<pad name="LV" x="2.54" y="16.51" drill="0.6" diameter="1.9304"/>
+<pad name="A4" x="2.54" y="6.35" drill="0.6" diameter="1.9304"/>
+<pad name="A3" x="2.54" y="8.89" drill="0.6" diameter="1.9304"/>
+<pad name="A2" x="2.54" y="11.43" drill="0.6" diameter="1.9304"/>
+<pad name="A1" x="2.54" y="13.97" drill="0.6" diameter="1.9304"/>
+<pad name="GND1" x="12.7" y="3.81" drill="0.6" diameter="1.9304"/>
+<pad name="B4" x="12.7" y="6.35" drill="0.6" diameter="1.9304"/>
+<pad name="B3" x="12.7" y="8.89" drill="0.6" diameter="1.9304"/>
+<pad name="B2" x="12.7" y="11.43" drill="0.6" diameter="1.9304"/>
+<pad name="B1" x="12.7" y="13.97" drill="0.6" diameter="1.9304"/>
+<pad name="HV" x="12.7" y="16.51" drill="0.6" diameter="1.9304"/>
 </package>
 </packages>
 <symbols>
@@ -115,6 +137,28 @@
 <text x="-10.16" y="10.16" size="1.778" layer="95">&gt;NAME</text>
 <text x="0" y="-12.7" size="1.778" layer="96">&gt;VALUE</text>
 </symbol>
+<symbol name="LEVELSHIFTER">
+<wire x1="-30.48" y1="17.78" x2="-30.48" y2="-20.32" width="0.254" layer="94"/>
+<wire x1="-30.48" y1="-20.32" x2="-27.94" y2="-22.86" width="0.254" layer="94" curve="90"/>
+<wire x1="-27.94" y1="-22.86" x2="2.54" y2="-22.86" width="0.254" layer="94"/>
+<wire x1="2.54" y1="-22.86" x2="5.08" y2="-20.32" width="0.254" layer="94" curve="90"/>
+<wire x1="5.08" y1="-20.32" x2="5.08" y2="17.78" width="0.254" layer="94"/>
+<wire x1="5.08" y1="17.78" x2="2.54" y2="20.32" width="0.254" layer="94" curve="90"/>
+<wire x1="2.54" y1="20.32" x2="-27.94" y2="20.32" width="0.254" layer="94"/>
+<wire x1="-27.94" y1="20.32" x2="-30.48" y2="17.78" width="0.254" layer="94" curve="90"/>
+<pin name="GND2" x="-27.94" y="-17.78" length="middle" rot="R180"/>
+<pin name="LV" x="-27.94" y="15.24" length="middle" rot="R180"/>
+<pin name="A1" x="-27.94" y="10.16" length="middle" rot="R180"/>
+<pin name="A4" x="-27.94" y="-12.7" length="middle" rot="R180"/>
+<pin name="A2" x="-27.94" y="2.54" length="middle" rot="R180"/>
+<pin name="A3" x="-27.94" y="-5.08" length="middle" rot="R180"/>
+<pin name="B2" x="2.54" y="2.54" length="middle"/>
+<pin name="B1" x="2.54" y="10.16" length="middle"/>
+<pin name="HV" x="2.54" y="15.24" length="middle"/>
+<pin name="B3" x="2.54" y="-5.08" length="middle"/>
+<pin name="B4" x="2.54" y="-12.7" length="middle"/>
+<pin name="GND1" x="2.54" y="-17.78" length="middle"/>
+</symbol>
 </symbols>
 <devicesets>
 <deviceset name="APA102-2020">
@@ -124,14 +168,40 @@
 <devices>
 <device name="20-20" package="APA102-2020">
 <connects>
-<connect gate="G$1" pin="CK0" pad="2"/>
-<connect gate="G$1" pin="CKL" pad="5"/>
-<connect gate="G$1" pin="GND" pad="6"/>
-<connect gate="G$1" pin="GND-" pad="GND"/>
-<connect gate="G$1" pin="SD0" pad="3"/>
-<connect gate="G$1" pin="SD1" pad="4"/>
-<connect gate="G$1" pin="VDD" pad="1"/>
-<connect gate="G$1" pin="VDD+" pad="VDD"/>
+<connect gate="G$1" pin="CK0" pad="CK0"/>
+<connect gate="G$1" pin="CKL" pad="CKL"/>
+<connect gate="G$1" pin="GND" pad="GND"/>
+<connect gate="G$1" pin="GND-" pad="GND-"/>
+<connect gate="G$1" pin="SD0" pad="SD0"/>
+<connect gate="G$1" pin="SD1" pad="SD1"/>
+<connect gate="G$1" pin="VDD" pad="VDD"/>
+<connect gate="G$1" pin="VDD+" pad="VDD+"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="LEVELSHIFTER">
+<gates>
+<gate name="G$1" symbol="LEVELSHIFTER" x="12.7" y="0"/>
+</gates>
+<devices>
+<device name="4BI-DIRECTIONAL" package="LEVENSHIFTER">
+<connects>
+<connect gate="G$1" pin="A1" pad="A1"/>
+<connect gate="G$1" pin="A2" pad="A2"/>
+<connect gate="G$1" pin="A3" pad="A3"/>
+<connect gate="G$1" pin="A4" pad="A4"/>
+<connect gate="G$1" pin="B1" pad="B1"/>
+<connect gate="G$1" pin="B2" pad="B2"/>
+<connect gate="G$1" pin="B3" pad="B3"/>
+<connect gate="G$1" pin="B4" pad="B4"/>
+<connect gate="G$1" pin="GND1" pad="GND1"/>
+<connect gate="G$1" pin="GND2" pad="GND2"/>
+<connect gate="G$1" pin="HV" pad="HV"/>
+<connect gate="G$1" pin="LV" pad="LV"/>
 </connects>
 <technologies>
 <technology name=""/>
